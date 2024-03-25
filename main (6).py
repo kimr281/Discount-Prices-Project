@@ -8,8 +8,6 @@ import valid as v
 #                   enter as many items as you like and the program will
 #                   output the total price and the total amount saved.
 #******************************************************************************
-
-
 ADD_ITEM = 1
 QUIT = 2
 
@@ -28,7 +26,6 @@ def main():
   while (choice != QUIT):
     print_menu()
     choice = get_choice()
-
 
     if choice == ADD_ITEM:
       item = get_item()
@@ -171,6 +168,7 @@ def print_totals(total_payment, total_savings, count):
   print(f'You payed: ${total_payment:.2f} after the discounts')
   print(f'You saved: ${total_savings:.2f} in total')
 
+
 def print_goodbye():
   """
   Prints a goodbye message to the user
@@ -178,5 +176,6 @@ def print_goodbye():
   :return: none
   """
   print("\nThank you for using my discount shopping program!")
+
 
 main()
